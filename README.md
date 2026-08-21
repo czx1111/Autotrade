@@ -5,7 +5,7 @@
 支持三种运行方式：**WebUI 控制台** · **自动交易守护进程** · **Python API**，并可接入 **DSH（DeepSeek Harness）** 实现 AI 对话式交易。
 
 > ⚠️ **风险提示**：本框架仅用于研究与技术验证，不构成任何投资建议。
-> 
+
 > 📌 **基于 TradingAgents**：本项目基于开源多智能体 LLM 交易框架 [TradingAgents](https://github.com/TauricResearch/TradingAgents) 进行深度定制与二次开发，针对 A 股市场特性重新设计了分析师体系、行情数据源、风控规则与交易执行链路。在此向 TradingAgents 原始团队表示感谢。
 
 ---
