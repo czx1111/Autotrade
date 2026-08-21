@@ -1,0 +1,47 @@
+{
+  "accounts": [
+    {
+      "name": "pingan",
+      "comment": "平安证券（同花顺通用客户端通道，需先登录同花顺并绑定平安账号）",
+      "broker_settings": {
+        "broker": "easytrader",
+        "easytrader_client": "universal",
+        "easytrader_client_path": "C:\\同花顺软件\\同花顺"
+      },
+      "watchlist": ["600519", "000858", "601318", "300750", "600036"],
+      "focus_max": 3,
+      "screening_enabled": true,
+      "min_order_value": 5000,
+      "large_order_confirm_value": 50000,
+      "strategy": {
+        "stop_loss_pct": 0.07,
+        "take_profit_pct": 0.15,
+        "trailing_stop_pct": 0.08,
+        "ma_cross_exit": false,
+        "max_hold_days": null
+      }
+    },
+    {
+      "name": "galaxy",
+      "comment": "银河证券（网页交易通道；若开通了 miniQMT，把 broker 改成 qmt 并填 qmt_mini_path/qmt_account_id）",
+      "broker_settings": {
+        "broker": "easytrader",
+        "easytrader_client": "yh",
+        "easytrader_user": "你的资金账号",
+        "easytrader_password": "你的交易密码"
+      },
+      "watchlist": ["600036", "000001", "600900", "510300"],
+      "focus_max": 2,
+      "screening_enabled": true,
+      "min_order_value": 5000,
+      "large_order_confirm_value": 30000,
+      "strategy": {
+        "stop_loss_pct": 0.05,
+        "take_profit_pct": 0.12,
+        "trailing_stop_pct": 0.06,
+        "ma_cross_exit": true,
+        "max_hold_days": 30
+      }
+    }
+  ]
+}

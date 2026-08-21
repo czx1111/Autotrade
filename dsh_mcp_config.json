@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "autotrade": {
+      "command": "python",
+      "args": ["mcp_server.py"],
+      "cwd": ".",
+      "env": {
+        "AUTOTRADE_MCP_ALLOW_TRADE": "1",
+        "AUTOTRADE_ACCOUNTS": "accounts.json",
+        "DEEPSEEK_API_KEY": "${DEEPSEEK_API_KEY}",
+        "TRADINGAGENTS_LLM_PROVIDER": "deepseek",
+        "TRADINGAGENTS_DEEP_THINK_LLM": "deepseek-v4-pro",
+        "TRADINGAGENTS_QUICK_THINK_LLM": "deepseek-v4-flash",
+        "TRADINGAGENTS_OUTPUT_LANGUAGE": "Chinese"
+      }
+    }
+  }
+}
